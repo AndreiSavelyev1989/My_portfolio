@@ -1,0 +1,10 @@
+.mainBlock {
+    height: 100vh;
+    background: #a8efa8;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    background: #969090;
+}
