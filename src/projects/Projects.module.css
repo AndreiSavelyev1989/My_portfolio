@@ -1,16 +1,13 @@
-.skillsBlock {
-    background: #d9bbc0;
+.projectsBlock {
+    background: lightcoral;
 }
 
-.skillsContainer {
+.projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.title {
-    background: #aea8a8;
-}
-.skills {
+.projects {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
