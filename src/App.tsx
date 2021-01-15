@@ -5,6 +5,8 @@ import {Main} from "./main/Main";
 import {Skills} from "./skills/Skills";
 import {Projects} from "./projects/Projects";
 import {RemoteWork} from "./remote-work/RemoteWork";
+import {Contacts} from "./contacts/Contacts";
+import {Footer} from "./footer/Footer";
 
 const skills = [
     {
@@ -75,6 +77,12 @@ const projects = [
             ' tempor incididunt ut labore et dolore magna aliqua Ut enim...'
     },
 ]
+const socialLink = [
+    {id: 1, title: "Facebook"},
+    {id: 2, title: "Twitter"},
+    {id: 3, title: "LinkedIn"},
+    {id: 4, title: "VK"},
+]
 
 export type SkillType = {
     id: number
@@ -87,7 +95,10 @@ export type ProjectType = {
     title: string
     description: string
 }
-
+export type SocialLinkType = {
+    id: number
+    title: string
+}
 const App = () => {
     return (
         <div className="App">
@@ -96,6 +107,8 @@ const App = () => {
             <Skills skills={skills}/>
             <Projects projects={projects}/>
             <RemoteWork />
+            <Contacts />
+            <Footer socialLink={socialLink}/>
         </div>
     );
 }

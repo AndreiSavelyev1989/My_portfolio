@@ -1,7 +1,12 @@
 .nav {
     width: 300px;
-    background: #deb0b7;
+    background: #a4989a;
     display: flex;
     justify-content: space-around;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
 }
 

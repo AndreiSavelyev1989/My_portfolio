@@ -1,0 +1,42 @@
+.footerBlock {
+    background: #879fe0;
+}
+
+.footerContainer {
+    flex-direction: column;
+}
+
+.title {
+    background: #a8efa8;
+}
+
+.linkContainer {
+    width: 50%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #9aefd1;
+    margin-bottom: 10px;
+}
+
+.link {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #969090;
+    margin: 10px 0;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright {
+    margin: 10px 0;
+    background: #aea8a8;
+}
