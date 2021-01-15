@@ -1,0 +1,19 @@
+.remoteWorkBlock {
+    background: #f3daab;
+}
+
+.remoteWorkContainer {
+    flex-direction: column;
+    text-align: center;
+}
+
+.title {
+    background: #aea8a8;
+}
+
+.button {
+    display: block;
+    width: 150px;
+    height: 40px;
+    background: #969090;
+}

@@ -4,6 +4,7 @@ import {Header} from "./header/Header";
 import {Main} from "./main/Main";
 import {Skills} from "./skills/Skills";
 import {Projects} from "./projects/Projects";
+import {RemoteWork} from "./remote-work/RemoteWork";
 
 const skills = [
     {
@@ -94,6 +95,7 @@ const App = () => {
             <Main/>
             <Skills skills={skills}/>
             <Projects projects={projects}/>
+            <RemoteWork />
         </div>
     );
 }

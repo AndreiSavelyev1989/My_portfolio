@@ -2,7 +2,7 @@ import React from "react";
 import styleContainer from "../common/style/Container.module.css";
 import style from "./Skills.module.css";
 import {SkillType} from "../App";
-import {Skill} from "./Skill/Skill";
+import {Skill} from "./skill/Skill";
 
 type PropsType = {
     skills: Array<SkillType>
