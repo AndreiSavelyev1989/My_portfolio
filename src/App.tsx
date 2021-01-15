@@ -23,6 +23,27 @@ const skills = [
             ' eiusmod' +
             ' tempor incididunt ut labore et dolore magna aliqua Ut enim...'
     },
+    {
+        id: 4,
+        title: 'CSS',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do' +
+            ' eiusmod' +
+            ' tempor incididunt ut labore et dolore magna aliqua Ut enim...'
+    },
+    {
+        id: 5,
+        title: 'HTML',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do' +
+            ' eiusmod' +
+            ' tempor incididunt ut labore et dolore magna aliqua Ut enim...'
+    },
+    {
+        id: 6,
+        title: 'Material UI',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do' +
+            ' eiusmod' +
+            ' tempor incididunt ut labore et dolore magna aliqua Ut enim...'
+    },
    
 ]
 export type SkillType = {
