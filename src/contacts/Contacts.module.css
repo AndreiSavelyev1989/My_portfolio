@@ -5,7 +5,6 @@
 .contactsContainer {
     flex-direction: column;
     background: #d0c8c8;
-    /*border: 1px solid;*/
 }
 
 .title {
