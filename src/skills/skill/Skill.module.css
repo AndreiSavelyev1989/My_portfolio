@@ -7,15 +7,41 @@
     text-align: start;
     background: #161616;
     border-bottom: 2px solid transparent;
-    box-shadow: 0 6px 16px rgba(0,0,0,.2);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .2);
     margin-bottom: 30px;
     padding: 38px 42px;
-    transition: all .15s ease-in-out;
     position: relative;
 }
 
-.skill:hover {
+.skill:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid #009e66;
     border-bottom: 2px solid #009e66;
+    transition: 0.5s;
+    transform: scaleX(0);
+}
+
+.skill:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 2px solid #009e66;
+    border-left: 2px solid #009e66;
+    transition: 0.5s;
+    transform: scaleY(0);
+}
+
+.skill:hover:before,
+.skill:hover:after {
+    transform: scale(1);
 }
 
 .skillIcon {

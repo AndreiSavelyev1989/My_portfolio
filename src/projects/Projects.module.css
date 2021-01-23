@@ -1,5 +1,5 @@
 .projectsBlock {
-    background: lightcoral;
+    background: #111;
 }
 
 .projectsContainer {
@@ -12,5 +12,4 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    border: 1px solid;
 }
