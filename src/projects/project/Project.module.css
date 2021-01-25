@@ -10,17 +10,6 @@
     transition: all .15s ease-in-out;
 }
 
-/*.projectImg {*/
-/*    width: 100%;*/
-/*    min-height: 395px;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    border: 1px solid;*/
-/*    background: #eee2e2;*/
-/*    position: relative;*/
-/*}*/
-
 .projectLink {
     background: #969090;
     text-decoration: none;

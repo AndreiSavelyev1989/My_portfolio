@@ -5,6 +5,7 @@ import {ProjectImage} from "./project-image/ProjectImage";
 type PropsType = {
     title: string
     description: string
+    style: object
 }
 
 export const Project = (props: PropsType) => {
@@ -13,7 +14,7 @@ export const Project = (props: PropsType) => {
             {/*<div className={style.projectImg}>*/}
             {/*    <a href="#" className={style.projectLink}>Follow the link</a>*/}
             {/*</div>*/}
-            <ProjectImage title={props.title}/>
+            <ProjectImage title={props.title} style={props.style}/>
             <div className={style.projectText}>
                 <div className={style.projectTitle}>{props.title}</div>
                 <div className={style.projectDecription}>{props.description}</div>

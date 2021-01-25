@@ -15,10 +15,11 @@ export const Projects = (props: PropsType) => {
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <Title title={"Projects"}/>
                 <div className={style.projects}>
-                    {props.projects.map(progect => <Project
-                        key={progect.id}
-                        title={progect.title}
-                        description={progect.description}/>)}
+                    {props.projects.map(project => <Project
+                        key={project.id}
+                        style={project.projectBackground}
+                        title={project.title}
+                        description={project.description}/>)}
                 </div>
             </div>
         </div>

@@ -9,6 +9,9 @@ import {Contacts} from "./contacts/Contacts";
 import {Footer} from "./footer/Footer";
 import {FaReact, IoLogoSass, SiCss3, SiHtml5, SiMaterialUi, SiRedux, VscSettingsGear} from "react-icons/all";
 import {IconContext} from 'react-icons';
+import socialNetwork from "./assets/images/socialNetwork.jpg";
+import todolist from "./assets/images/todolist.jpg";
+
 
 const skills = [
     {
@@ -70,27 +73,20 @@ const projects = [
     {
         id: 1,
         title: 'Social Network',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut' +
+            ' labore et dolore magna aliqua Ut enim...',
+        projectBackground: {
+            backgroundImage: `url(${socialNetwork})`
+        }
     },
     {
         id: 2,
         title: 'Todolist',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod' +
-            ' tempor incididunt ut labore et dolore magna aliqua Ut enim...'
-    },
-    {
-        id: 3,
-        title: 'Rest API',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do' +
-            ' eiusmod' +
-            ' tempor incididunt ut labore et dolore magna aliqua Ut enim...'
-    },
-    {
-        id: 4,
-        title: 'Material UI',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do' +
-            ' eiusmod' +
-            ' tempor incididunt ut labore et dolore magna aliqua Ut enim...'
+            ' tempor incididunt ut labore et dolore magna aliqua Ut enim...',
+        projectBackground: {
+            backgroundImage: `url(${todolist})`
+        }
     },
 ]
 const socialLink = [
@@ -111,6 +107,7 @@ export type ProjectType = {
     id: number
     title: string
     description: string
+    projectBackground: object
 }
 export type SocialLinkType = {
     id: number
