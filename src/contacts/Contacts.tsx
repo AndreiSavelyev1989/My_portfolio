@@ -1,18 +1,23 @@
 import style from "./Contacts.module.css";
 import styleContainer from "../common/style/Container.module.css";
 import React from "react";
+import {Title} from "../common/components/title/Title";
+import {MessageMe} from "./message-me/MessageMe";
+import {ContactInfo} from "./contact-info/ContactInfo";
+import {ContactInfoType} from "../App";
 
-export const Contacts = () => {
+type PropsType = {
+    contactInfo: Array<ContactInfoType>
+}
+export const Contacts: React.FC<PropsType> = (props) => {
     return (
         <div className={style.contactsBlock}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
-                <h2 className={style.title}>Contacts</h2>
-                <form action="" className={style.form}>
-                    <input type="text" placeholder={"Name"}/>
-                    <input type="text" placeholder={"E-mail"}/>
-                    <textarea name="" id="" cols={30} rows={10} placeholder={"Your message"}/>
-                </form>
-                <button className={style.button}>SEND MESSAGE</button>
+                <Title title={'Get in Touch'}/>
+                <div className={style.mainInfo}>
+                    <MessageMe />
+                    <ContactInfo contactInfo={props.contactInfo}/>
+                </div>
             </div>
         </div>
     )

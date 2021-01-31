@@ -1,10 +1,10 @@
 .mainBlock {
-    height: 100vh;
-    background: #a8efa8;
+    min-height: 100vh;
+    background: #202020;
+}
+.mainContainer {
 }
 
 .photo {
-    width: 300px;
-    height: 400px;
-    background: #969090;
+    width: 500px;
 }

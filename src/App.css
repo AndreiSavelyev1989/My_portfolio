@@ -7,3 +7,14 @@
     width: 58px;
     height: 58px;
 }
+
+.footerIcons {
+    display: flex;
+    width: 22px;
+    height: 22px;
+}
+
+.footerIcons:hover {
+    color: #009e66;
+    transition: 0.3s;
+}

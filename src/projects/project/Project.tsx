@@ -11,9 +11,6 @@ type PropsType = {
 export const Project = (props: PropsType) => {
     return (
         <div className={style.project}>
-            {/*<div className={style.projectImg}>*/}
-            {/*    <a href="#" className={style.projectLink}>Follow the link</a>*/}
-            {/*</div>*/}
             <ProjectImage title={props.title} style={props.style}/>
             <div className={style.projectText}>
                 <div className={style.projectTitle}>{props.title}</div>

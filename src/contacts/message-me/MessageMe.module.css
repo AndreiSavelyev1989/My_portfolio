@@ -1,0 +1,38 @@
+.messageMeBlock {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+}
+.messageMeWrapper {
+    width: 100%;
+    margin-right: 20px;
+}
+.title {
+    font-size: 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    background: #009e66;
+    color: #f3f3f3;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 6px 16px rgba(0,0,0,.9);
+    cursor: pointer;
+}
+
+.button:hover {
+    transition: 0.5s;
+    box-shadow: 0 6px 16px rgb(54, 150, 100);
+}

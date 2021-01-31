@@ -4,16 +4,10 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: start;
-    background: #161616;
-    box-shadow: 0 6px 16px rgba(0,0,0,.2);
+    background: #303030;
+    box-shadow: 0 6px 16px rgba(0,0,0,.9);
     margin: 0 30px 40px;
     transition: all .15s ease-in-out;
-}
-
-.projectLink {
-    background: #969090;
-    text-decoration: none;
-    color: white;
 }
 
 .projectText {
@@ -22,8 +16,11 @@
 }
 
 .projectText:hover {
+    transition: 0.5s;
     border-bottom: 2px solid #009e66;
+    box-shadow: 0 6px 16px rgb(54, 150, 100);
 }
+
 .projectTitle {
     color: #f3f3f3;
     font-size: 20px;

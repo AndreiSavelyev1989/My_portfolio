@@ -7,7 +7,21 @@ import {Projects} from "./projects/Projects";
 import {RemoteWork} from "./remote-work/RemoteWork";
 import {Contacts} from "./contacts/Contacts";
 import {Footer} from "./footer/Footer";
-import {FaReact, IoLogoSass, SiCss3, SiHtml5, SiMaterialUi, SiRedux, VscSettingsGear} from "react-icons/all";
+import {
+    AiOutlineFacebook, AiOutlineGithub,
+    AiOutlineLinkedin, FaInstagram,
+    FaReact,
+    HiOutlineUserCircle,
+    IoIosCall,
+    IoLogoSass,
+    RiUserLocationFill,
+    SiCss3,
+    SiHtml5,
+    SiMaterialUi,
+    SiMinutemailer,
+    SiRedux,
+    VscSettingsGear
+} from "react-icons/all";
 import {IconContext} from 'react-icons';
 import socialNetwork from "./assets/images/socialNetwork.jpg";
 import todolist from "./assets/images/todolist.jpg";
@@ -58,7 +72,7 @@ const skills = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do' +
             ' eiusmod' +
             ' tempor incididunt ut labore et dolore magna aliqua Ut enim...',
-        icon: <SiMaterialUi />
+        icon: <SiMaterialUi/>
     },
     {
         id: 7,
@@ -66,7 +80,7 @@ const skills = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do' +
             ' eiusmod' +
             ' tempor incididunt ut labore et dolore magna aliqua Ut enim...',
-        icon: <IoLogoSass />
+        icon: <IoLogoSass/>
     },
 ]
 const projects = [
@@ -90,10 +104,16 @@ const projects = [
     },
 ]
 const socialLink = [
-    {id: 1, title: "Facebook"},
-    {id: 2, title: "Twitter"},
-    {id: 3, title: "LinkedIn"},
-    {id: 4, title: "VK"},
+    {id: 1, icon: <AiOutlineFacebook/>},
+    {id: 2, icon: <FaInstagram/>},
+    {id: 3, icon: <AiOutlineLinkedin/>},
+    {id: 4, icon: <AiOutlineGithub/>},
+]
+const contactInfo = [
+    {id: 1, icon: <HiOutlineUserCircle/>, title: "Name", content: "Andrei Saveluev"},
+    {id: 2, icon: <RiUserLocationFill/>, title: "Location", content: "Belarus, Mogilev"},
+    {id: 3, icon: <IoIosCall/>, title: "Call Me", content: "+375292536635"},
+    {id: 4, icon: <SiMinutemailer/>, title: "Email Me", content: "andreisaveluev@gmail.com"},
 ]
 
 export type SkillType = {
@@ -102,7 +122,6 @@ export type SkillType = {
     description: string
     icon: any
 }
-
 export type ProjectType = {
     id: number
     title: string
@@ -111,21 +130,32 @@ export type ProjectType = {
 }
 export type SocialLinkType = {
     id: number
-    title: string
+    icon: any
 }
+export type ContactInfoType = {
+    id: number
+    icon: any
+    title: string
+    content: string
+}
+
+
 const App = () => {
     return (
-        <IconContext.Provider value={ { className: "reactIcons" }}>
-            <div className="App">
-                <Header/>
-                <Main/>
+
+        <div className="App">
+            <Header/>
+            <Main/>
+            <IconContext.Provider value={{className: "reactIcons"}}>
                 <Skills skills={skills}/>
                 <Projects projects={projects}/>
                 <RemoteWork/>
-                <Contacts/>
-                <Footer socialLink={socialLink}/>
-            </div>
-        </IconContext.Provider>
+                <Contacts contactInfo={contactInfo}/>
+            </IconContext.Provider>
+            <IconContext.Provider value={{className: "footerIcons"}}>
+            <Footer socialLink={socialLink}/>
+            </IconContext.Provider>
+        </div>
     );
 }
 

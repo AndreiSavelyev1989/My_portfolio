@@ -11,11 +11,10 @@ export const Footer = (props: PropsType) => {
     return (
         <div className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                <h2 className={style.title}>Andrei</h2>
+                <div className={style.copyright}>© Andrei Saveluev 2021, All Rights Reserved.</div>
                 <div className={style.linkContainer}>
-                    {props.socialLink.map(link => <div className={style.link} key={link.id}><a href="#">{link.title}</a></div>)}
+                    {props.socialLink.map(link => <div className={style.link} key={link.id}><a href="#">{link.icon}</a></div>)}
                 </div>
-                <div className={style.copyright}>© 2021, All Rights Reserved.</div>
             </div>
         </div>
     )
