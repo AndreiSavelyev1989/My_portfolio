@@ -1,0 +1,25 @@
+.footerBlock {
+    background: #303030;
+}
+
+.footerContainer {
+    align-items: center;
+}
+
+.linkContainer {
+    width: 50%;
+    min-height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.link a {
+    color: #f0f0f0;
+}
+
+.copyright {
+    margin: 10px 0;
+}

@@ -1,0 +1,24 @@
+.contactInfoBlock {
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contactInfo {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.contentTitle {
+  font-size: 1.5rem;
+}
+
+.infoDescription {
+}
+
+@media screen and (min-width: 360px) {
+  .contactInfo {
+    margin-left: 0;
+  }
+}

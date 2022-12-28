@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headerBlock {
+    position: sticky;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    background: #202020; /* background when scroll is in the top */
+    transition: background 1.5s; /* control how smooth the background changes */
+    z-index: 2;
+}
+
+.headerBlock.scrolled {
+    background: #303030;
+    height: 60px;
+    transition: background 1.5s;
+    box-shadow: 0 6px 6px rgb(54, 150, 100);
+}

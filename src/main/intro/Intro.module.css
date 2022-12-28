@@ -1,0 +1,51 @@
+.intro {
+  width: 600px;
+}
+.intro h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.introName {
+  font-size: 62px;
+  font-weight: 700;
+}
+
+.singleHeadline {
+  width: 19ch;
+  color: #f3f3f3;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  border-right: 2px solid #009e66;
+  animation: flashing-border 0.75s linear infinite,
+    printed-text 6s steps(19) infinite;
+}
+
+@keyframes flashing-border {
+  0% {
+    border-color: #009e66;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #009e66;
+  }
+}
+
+@keyframes printed-text {
+  from {
+    width: 0;
+  }
+}
+
+.singleHeadline,
+.cdWords {
+  font-size: 30px;
+}
+
+.cdWords {
+  color: #009e66;
+}
