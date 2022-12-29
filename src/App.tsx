@@ -47,7 +47,7 @@ const App = () => {
           <Skills skills={skills} />
           <Projects projects={projects} />
           <RemoteWork />
-          <Contacts contactInfo={contactInfos} />
+          <Contacts contactInfos={contactInfos} />
         </IconContext.Provider>
         <IconContext.Provider value={{ className: "footerIcons" }}>
           <Footer socialLink={socialLinks} />

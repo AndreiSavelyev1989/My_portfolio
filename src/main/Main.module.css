@@ -1,21 +1,25 @@
 .mainBlock {
-    /* min-height: 700px; */
-    background: #202020;
+  background: #202020;
 }
 .mainContainer {
-    /* min-height: 700px; */
 }
 
 .photo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-    height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 900px;
 }
 
 img {
-    width: 450px;
-    height: 750px; 
-    border-radius: 30px;
+  width: 450px;
+  height: 750px;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 360px) {
+  img {
+    width: 340px;
+  }
 }
