@@ -1,38 +1,80 @@
 .messageMeBlock {
-    width: 450px;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  width: 450px;
 }
 .messageMeWrapper {
-    width: 100%;
-    margin-right: 20px;
+  width: 100%;
+  margin-right: 20px;
 }
 .title {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.form input {
-    margin-bottom: 10px;
+input,
+textarea {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border: 3px solid transparent;
+  outline: transparent;
+}
+
+input:focus,
+textarea:focus {
+  border: 3px solid #009e66;
+}
+
+.submitWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
 
 .button {
-    width: 150px;
-    height: 40px;
-    background: #009e66;
-    color: #f3f3f3;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 0;
-    box-shadow: 0 6px 16px rgba(0,0,0,.9);
-    cursor: pointer;
+  height: 40px;
+  margin-bottom: 0px;
+  border: 0;
+  border-radius: 5px;
+  background: #009e66;
+  color: #f3f3f3;
+  box-shadow: 0 6px 16px #000000e6;
+  cursor: pointer;
 }
 
 .button:hover {
-    transition: 0.5s;
-    box-shadow: 0 6px 16px rgb(54, 150, 100);
+  transition: 0.5s;
+  box-shadow: 0 6px 16px #369664;
+}
+
+.success {
+  margin-left: 4px;
+  color: #009e66;
+}
+
+.error {
+  margin-left: 4px;
+  color: #a61c1c;
+}
+
+.succesWrapper svg,
+.errorWrapper svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 7px;
+}
+
+.errorWrapper svg {
+  fill: #a61c1c;
+}
+
+.succesWrapper,
+.errorWrapper {
+  display: flex;
+  align-items: center;
 }

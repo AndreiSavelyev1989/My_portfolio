@@ -11,7 +11,7 @@ export const Main = () => {
             <div className={`${styleContainer.container} ${style.mainContainer}`}>
                 <Intro/>
                 <div className={style.photo}>
-                    <img src={myPhoto} alt="my-photo"/>
+                    <img src={myPhoto} alt="my-face"/>
                 </div>
             </div>
         </div>

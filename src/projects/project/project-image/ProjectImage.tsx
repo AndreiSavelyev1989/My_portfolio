@@ -12,7 +12,7 @@ export const ProjectImage:React.FC<PropsType> = (props) => {
             <div className={style.mask}>
                 <h2>{props.title}</h2>
                 <p>A cool description of some sort between these tags. I am so cool and awesomely awesome.</p>
-                <a href="#" className={style.info}>Go to</a>
+                <a href="fff" className={style.info}>Go to</a>
             </div>
         </div>
     )
