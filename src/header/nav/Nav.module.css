@@ -1,14 +1,18 @@
 .nav {
-    min-width: 300px;
-    display: flex;
-    justify-content: space-evenly;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 0 20px 0 20px;
+  border-bottom: 2px solid transparent;
 }
 
+.nav a:hover {
+  transition: 0.5s;
+  border-bottom: 2px solid #009e66;
+}
