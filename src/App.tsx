@@ -13,6 +13,7 @@ import {
   socialLinks,
   contactInfos,
 } from "./assets/helpers/index";
+import { BrowserRouter } from "react-router-dom";
 
 export type SkillType = {
   id: number;
@@ -35,26 +36,28 @@ export type ContactInfoType = {
   id: number;
   icon: any;
   title: string;
-  content: string;
+  content: string | any;
 };
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <>
-        <IconContext.Provider value={{ className: "reactIcons" }}>
-          <Skills skills={skills} />
-          <Projects projects={projects} />
-          <RemoteWork />
-          <Contacts contactInfos={contactInfos} />
-        </IconContext.Provider>
-        <IconContext.Provider value={{ className: "footerIcons" }}>
-          <Footer socialLinks={socialLinks} />
-        </IconContext.Provider>
-      </>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Main />
+        <>
+          <IconContext.Provider value={{ className: "reactIcons" }}>
+            <Skills skills={skills} />
+            <Projects projects={projects} />
+            <RemoteWork />
+            <Contacts contactInfos={contactInfos} />
+          </IconContext.Provider>
+          <IconContext.Provider value={{ className: "footerIcons" }}>
+            <Footer socialLinks={socialLinks} />
+          </IconContext.Provider>
+        </>
+      </div>
+    </BrowserRouter>
   );
 };
 

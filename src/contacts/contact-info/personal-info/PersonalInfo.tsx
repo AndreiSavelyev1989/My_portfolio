@@ -16,7 +16,7 @@ export const PersonalInfo: React.FC<PropsType> = (props) => {
             </div>
             <div>
                 <div className={style.title}>{props.title}</div>
-                <div>{props.content}</div>
+                <div className={style.content}>{props.content}</div>
             </div>
         </div>
     )

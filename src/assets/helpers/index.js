@@ -11,6 +11,7 @@ import { SiCss3, SiHtml5, SiMinutemailer, SiRedux } from "react-icons/si";
 import { VscSettingsGear } from "react-icons/vsc";
 import socialNetwork from "../images/socialNetwork.jpg";
 import todolist from "../images/todolist.jpg";
+import { ButtonMailto } from "../../mailto/ButtonMailto";
 
 export const skills = [
   {
@@ -131,6 +132,11 @@ export const contactInfos = [
     id: 4,
     icon: <SiMinutemailer />,
     title: "Email Me",
-    content: "andreisaveluev@gmail.com",
+    content: (
+      <ButtonMailto
+        label="andreisaveluev@gmail.com"
+        mailto="mailto:andreiscorpion19892010@gmail.com"
+      />
+    ),
   },
 ];

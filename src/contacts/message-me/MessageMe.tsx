@@ -157,7 +157,7 @@ export const MessageMe = () => {
             name="message"
             cols={30}
             rows={10}
-            placeholder={"Your message"}
+            placeholder={"Please enter your message"}
           />
           <div className={style.submitWrapper}>
             {isLoading ? (
