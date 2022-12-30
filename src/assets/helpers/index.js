@@ -91,10 +91,26 @@ export const projects = [
 ];
 
 export const socialLinks = [
-  { id: 1, icon: <AiOutlineFacebook /> },
-  { id: 2, icon: <FaInstagram /> },
-  { id: 3, icon: <AiOutlineLinkedin /> },
-  { id: 4, icon: <AiOutlineGithub /> },
+  {
+    id: 1,
+    icon: <AiOutlineFacebook />,
+    url: "https://www.facebook.com/andrei.savelev.5",
+  },
+  {
+    id: 2,
+    icon: <FaInstagram />,
+    url: "https://www.instagram.com/andrei_savelyev_s/",
+  },
+  {
+    id: 3,
+    icon: <AiOutlineLinkedin />,
+    url: "https://www.linkedin.com/in/andrei-savelyev-22671b1ba/",
+  },
+  {
+    id: 4,
+    icon: <AiOutlineGithub />,
+    url: "https://github.com/AndreiSavelyev1989",
+  },
 ];
 
 export const contactInfos = [

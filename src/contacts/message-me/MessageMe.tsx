@@ -1,5 +1,5 @@
 import style from "./MessageMe.module.css";
-import { ChangeEvent, useEffect, useRef, useState } from "react";
+import { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { MdReportGmailerrorred } from "react-icons/md";
@@ -15,10 +15,10 @@ export const MessageMe = () => {
     user_email: "",
     message: "",
   });
-  const formRef: any = useRef();
+  const formRef = useRef<any>();
 
   useEffect(() => {
-    let timeoutId: any = null;
+    let timeoutId: ReturnType<typeof setTimeout> | string = "";
     if (isSuccess || isError) {
       timeoutId = setTimeout(() => {
         setIsSuccess(false);
@@ -31,7 +31,7 @@ export const MessageMe = () => {
     };
   }, [isSuccess, isError]);
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
     if (
       mailData.user_name.length &&

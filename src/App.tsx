@@ -29,6 +29,7 @@ export type ProjectType = {
 export type SocialLinkType = {
   id: number;
   icon: any;
+  url: string;
 };
 export type ContactInfoType = {
   id: number;
@@ -50,7 +51,7 @@ const App = () => {
           <Contacts contactInfos={contactInfos} />
         </IconContext.Provider>
         <IconContext.Provider value={{ className: "footerIcons" }}>
-          <Footer socialLink={socialLinks} />
+          <Footer socialLinks={socialLinks} />
         </IconContext.Provider>
       </>
     </div>

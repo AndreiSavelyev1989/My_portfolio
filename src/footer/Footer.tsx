@@ -3,10 +3,10 @@ import styleContainer from "../common/style/Container.module.css";
 import { SocialLinkType } from "../App";
 
 type PropsType = {
-  socialLink: Array<SocialLinkType>;
+  socialLinks: Array<SocialLinkType>;
 };
 
-export const Footer = (props: PropsType) => {
+export const Footer = ({ socialLinks }: PropsType) => {
   return (
     <div className={style.footerBlock}>
       <div className={`${styleContainer.container} ${style.footerContainer}`}>
@@ -14,9 +14,11 @@ export const Footer = (props: PropsType) => {
           © Andrei Saveluey 2021, All Rights Reserved.
         </div>
         <div className={style.linkContainer}>
-          {props.socialLink.map((link) => (
+          {socialLinks.map((link) => (
             <div className={style.link} key={link.id}>
-              <a href="https://youtube.com">{link.icon}</a>
+              <a href={link.url} target="_blank" rel="noreferrer">
+                {link.icon}
+              </a>
             </div>
           ))}
         </div>
