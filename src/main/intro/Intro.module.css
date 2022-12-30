@@ -23,6 +23,10 @@
     printed-text 6s steps(19) infinite;
 }
 
+.summary {
+  font-size: 20px;
+}
+
 @keyframes flashing-border {
   0% {
     border-color: #009e66;
